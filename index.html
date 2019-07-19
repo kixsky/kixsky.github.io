@@ -260,6 +260,264 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/19/invalid-byte-tag-in-constant-pool-18/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/19/invalid-byte-tag-in-constant-pool-18/" itemprop="url">Invalid byte tag in constant pool 18</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-19T18:18:00+08:00">
+                2019-07-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Invalid-byte-tag-in-constant-pool-18"><a href="#Invalid-byte-tag-in-constant-pool-18" class="headerlink" title="Invalid byte tag in constant pool: 18"></a>Invalid byte tag in constant pool: 18</h1><p>遇到一个错误</p>
+<p><img src="https://s2.ax1x.com/2019/07/19/ZxpUfS.png" alt="错误信息"></p>
+<p>错误堆栈:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">org.aspectj.apache.bcel.classfile.ClassFormatException: Invalid <span class="keyword">byte</span> tag in constant pool: <span class="number">18</span></span><br><span class="line">	at org.aspectj.apache.bcel.classfile.Constant.readConstant(Constant.java:<span class="number">133</span>)</span><br><span class="line">	at org.aspectj.apache.bcel.classfile.ConstantPool.&lt;init&gt;(ConstantPool.java:<span class="number">45</span>)</span><br><span class="line">	at org.aspectj.apache.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:<span class="number">186</span>)</span><br><span class="line">	at org.aspectj.apache.bcel.classfile.ClassParser.parse(ClassParser.java:<span class="number">131</span>)</span><br><span class="line">	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadJavaClass(NonCachingClassLoaderRepository.java:<span class="number">262</span>)</span><br><span class="line">	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadClass(NonCachingClassLoaderRepository.java:<span class="number">242</span>)</span><br><span class="line">	at org.aspectj.apache.bcel.util.NonCachingClassLoaderRepository.loadClass(NonCachingClassLoaderRepository.java:<span class="number">249</span>)</span><br><span class="line">	at org.aspectj.weaver.reflect.Java15AnnotationFinder.getAnnotations(Java15AnnotationFinder.java:<span class="number">202</span>)</span><br><span class="line">	at org.aspectj.weaver.reflect.ReflectionBasedResolvedMemberImpl.unpackAnnotations(ReflectionBasedResolvedMemberImpl.java:<span class="number">211</span>)</span><br><span class="line">	at org.aspectj.weaver.reflect.ReflectionBasedResolvedMemberImpl.hasAnnotation(ReflectionBasedResolvedMemberImpl.java:<span class="number">163</span>)</span><br><span class="line">	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:<span class="number">109</span>)</span><br><span class="line">	at org.aspectj.weaver.patterns.ExactAnnotationTypePattern.matches(ExactAnnotationTypePattern.java:<span class="number">96</span>)</span><br><span class="line">	at org.aspectj.weaver.patterns.AnnotationPointcut.matchInternal(AnnotationPointcut.java:<span class="number">156</span>)</span><br><span class="line">	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:<span class="number">137</span>)</span><br><span class="line">	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.getShadowMatch(PointcutExpressionImpl.java:<span class="number">312</span>)</span><br><span class="line">	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.matchesExecution(PointcutExpressionImpl.java:<span class="number">122</span>)</span><br><span class="line">	at org.aspectj.weaver.internal.tools.PointcutExpressionImpl.matchesMethodExecution(PointcutExpressionImpl.java:<span class="number">103</span>)</span><br><span class="line">	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getShadowMatch(AspectJExpressionPointcut.java:<span class="number">426</span>)</span><br><span class="line">	at org.springframework.aop.aspectj.AspectJExpressionPointcut.matches(AspectJExpressionPointcut.java:<span class="number">281</span>)</span><br><span class="line">	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:<span class="number">241</span>)</span><br><span class="line">	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:<span class="number">279</span>)</span><br><span class="line">	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:<span class="number">311</span>)</span><br><span class="line">	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:<span class="number">119</span>)</span><br><span class="line">	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:<span class="number">89</span>)</span><br><span class="line">	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:<span class="number">70</span>)</span><br><span class="line">	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:<span class="number">346</span>)</span><br><span class="line">	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:<span class="number">298</span>)</span><br><span class="line">	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:<span class="number">423</span>)</span><br><span class="line">	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:<span class="number">1633</span>)</span><br><span class="line">	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:<span class="number">555</span>)</span><br><span class="line">	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:<span class="number">483</span>)</span><br><span class="line">	at org.springframework.beans.factory.support.AbstractBeanFactory$<span class="number">1</span>.getObject(AbstractBeanFactory.java:<span class="number">306</span>)</span><br><span class="line">	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:<span class="number">230</span>)</span><br><span class="line">	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:<span class="number">302</span>)</span><br><span class="line">	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:<span class="number">197</span>)</span><br><span class="line">	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:<span class="number">761</span>)</span><br><span class="line">	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:<span class="number">867</span>)</span><br><span class="line">	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:<span class="number">543</span>)</span><br><span class="line">	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:<span class="number">122</span>)</span><br><span class="line">	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:<span class="number">693</span>)</span><br><span class="line">	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:<span class="number">360</span>)</span><br><span class="line">	at org.springframework.boot.SpringApplication.run(SpringApplication.java:<span class="number">303</span>)</span><br><span class="line">	at org.springframework.boot.SpringApplication.run(SpringApplication.java:<span class="number">1118</span>)</span><br><span class="line">	at org.springframework.boot.SpringApplication.run(SpringApplication.java:<span class="number">1107</span>)</span><br><span class="line">	at com.zhongan.wx.atum.report.WxAtumReportApplication.main(WxAtumReportApplication.java:<span class="number">24</span>)</span><br></pre></td></tr></table></figure>
+
+<p>解决方法：</p>
+<p>升级aspectjrt和 aspectjweaver</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- aop --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.aspectj<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>aspectjrt<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">version</span>&gt;</span>1.8.13<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.aspectj<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>aspectjweaver<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">version</span>&gt;</span>1.8.13<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/18/excel-plus-use/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/18/excel-plus-use/" itemprop="url">Excel Plus 使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-18T18:39:41+08:00">
+                2019-07-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Excel-Plus"><a href="#Excel-Plus" class="headerlink" title="Excel Plus"></a>Excel Plus</h1><p>在平常的开发中，我们对Excel的操作通常都是使用apache 的poi框架，但是使用起来比较繁琐，Excel Plus对poi进行了<br>封装，使我们更好对Excel进行操作。</p>
+<h1 id="使用指南"><a href="#使用指南" class="headerlink" title="使用指南"></a>使用指南</h1><p>引入依赖</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.github.biezhi<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>excel-plus<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.7<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>构建模型</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Member</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"卡号"</span>, index = <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">private</span> Long cardNo;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"卡类型"</span>, index = <span class="number">1</span>)</span><br><span class="line">    <span class="keyword">private</span> String cardType;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"领用状态"</span>, index = <span class="number">2</span>)</span><br><span class="line">    <span class="keyword">private</span> String requisitionStatus;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"状态"</span>, index = <span class="number">3</span>)</span><br><span class="line">    <span class="keyword">private</span> String status;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"余额(元)"</span>, index = <span class="number">6</span>)</span><br><span class="line">    <span class="keyword">private</span> BigDecimal amount;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"会员"</span>, index = <span class="number">7</span>)</span><br><span class="line">    <span class="keyword">private</span> String nickname;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"性别"</span>, index = <span class="number">9</span>)</span><br><span class="line">    <span class="keyword">private</span> String gender;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"手机"</span>, index = <span class="number">10</span>)</span><br><span class="line">    <span class="keyword">private</span> String mobile;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"发卡日期"</span>, index = <span class="number">14</span>, datePattern = <span class="string">"M/d/yyyy HH:mm"</span>)</span><br><span class="line">    <span class="keyword">private</span> Date sendCardTime;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// getter setter 省略</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>读取Exel</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">List&lt;Member&gt; members = Reader.create(Member.class)</span><br><span class="line">                 .from(<span class="keyword">new</span> File(<span class="string">"members.xlsx"</span>))</span><br><span class="line">                 .start(<span class="number">1</span>)</span><br><span class="line">                 .asList();</span><br></pre></td></tr></table></figure>
+
+<p>其他例子：见 <a href="https://biezhi.github.io/excel-plus/#/" target="_blank" rel="noopener">https://biezhi.github.io/excel-plus/#/</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/18/mybatis-like/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -813,7 +1071,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>

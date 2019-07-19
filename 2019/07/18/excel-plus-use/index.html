@@ -94,17 +94,17 @@
 
 
 
-<meta name="description" content="Spring Boot Mybatis使用添加依赖123456789101112&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.mybatis.spring.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;mybatis-spring-boot-starter&amp;lt;/artifactId&amp;gt;    &amp;lt;version&amp;">
+<meta name="description" content="Excel Plus在平常的开发中，我们对Excel的操作通常都是使用apache 的poi框架，但是使用起来比较繁琐，Excel Plus对poi进行了封装，使我们更好对Excel进行操作。 使用指南引入依赖 123456&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;io.github.biezhi&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Spring Boot Mybatis 集成">
-<meta property="og:url" content="http://yoursite.com/2019/07/17/spring-boot-mybatis-integrate/index.html">
+<meta property="og:title" content="Excel Plus 使用">
+<meta property="og:url" content="http://yoursite.com/2019/07/18/excel-plus-use/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Spring Boot Mybatis使用添加依赖123456789101112&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.mybatis.spring.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;mybatis-spring-boot-starter&amp;lt;/artifactId&amp;gt;    &amp;lt;version&amp;">
+<meta property="og:description" content="Excel Plus在平常的开发中，我们对Excel的操作通常都是使用apache 的poi框架，但是使用起来比较繁琐，Excel Plus对poi进行了封装，使我们更好对Excel进行操作。 使用指南引入依赖 123456&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;io.github.biezhi&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-18T01:49:17.157Z">
+<meta property="og:updated_time" content="2019-07-19T10:32:12.407Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Spring Boot Mybatis 集成">
-<meta name="twitter:description" content="Spring Boot Mybatis使用添加依赖123456789101112&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.mybatis.spring.boot&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;gt;mybatis-spring-boot-starter&amp;lt;/artifactId&amp;gt;    &amp;lt;version&amp;">
+<meta name="twitter:title" content="Excel Plus 使用">
+<meta name="twitter:description" content="Excel Plus在平常的开发中，我们对Excel的操作通常都是使用apache 的poi框架，但是使用起来比较繁琐，Excel Plus对poi进行了封装，使我们更好对Excel进行操作。 使用指南引入依赖 123456&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;io.github.biezhi&amp;lt;/groupId&amp;gt;    &amp;lt;artifactId&amp;">
 
 
 
@@ -133,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/07/17/spring-boot-mybatis-integrate/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/18/excel-plus-use/">
 
 
 
 
 
-  <title>Spring Boot Mybatis 集成 | Hexo</title>
+  <title>Excel Plus 使用 | Hexo</title>
   
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/17/spring-boot-mybatis-integrate/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/18/excel-plus-use/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -279,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Spring Boot Mybatis 集成</h1>
+          <h1 class="post-title" itemprop="name headline">Excel Plus 使用</h1>
         
 
         <div class="post-meta">
@@ -291,8 +291,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-17T22:09:24+08:00">
-                2019-07-17
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-18T18:39:41+08:00">
+                2019-07-18
               </time>
             
 
@@ -329,9 +329,18 @@
       
 
       
-        <h1 id="Spring-Boot-Mybatis使用"><a href="#Spring-Boot-Mybatis使用" class="headerlink" title="Spring Boot Mybatis使用"></a>Spring Boot Mybatis使用</h1><h2 id="添加依赖"><a href="#添加依赖" class="headerlink" title="添加依赖"></a>添加依赖</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.mybatis.spring.boot&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mybatis-spring-boot-starter&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.0.1&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">    &lt;scope&gt;runtime&lt;/scope&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+        <h1 id="Excel-Plus"><a href="#Excel-Plus" class="headerlink" title="Excel Plus"></a>Excel Plus</h1><p>在平常的开发中，我们对Excel的操作通常都是使用apache 的poi框架，但是使用起来比较繁琐，Excel Plus对poi进行了<br>封装，使我们更好对Excel进行操作。</p>
+<h1 id="使用指南"><a href="#使用指南" class="headerlink" title="使用指南"></a>使用指南</h1><p>引入依赖</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.github.biezhi<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>excel-plus<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.7<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="数据源配置"><a href="#数据源配置" class="headerlink" title="数据源配置"></a>数据源配置</h2>
+<p>构建模型</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Member</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"卡号"</span>, index = <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">private</span> Long cardNo;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"卡类型"</span>, index = <span class="number">1</span>)</span><br><span class="line">    <span class="keyword">private</span> String cardType;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"领用状态"</span>, index = <span class="number">2</span>)</span><br><span class="line">    <span class="keyword">private</span> String requisitionStatus;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"状态"</span>, index = <span class="number">3</span>)</span><br><span class="line">    <span class="keyword">private</span> String status;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"余额(元)"</span>, index = <span class="number">6</span>)</span><br><span class="line">    <span class="keyword">private</span> BigDecimal amount;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"会员"</span>, index = <span class="number">7</span>)</span><br><span class="line">    <span class="keyword">private</span> String nickname;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"性别"</span>, index = <span class="number">9</span>)</span><br><span class="line">    <span class="keyword">private</span> String gender;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"手机"</span>, index = <span class="number">10</span>)</span><br><span class="line">    <span class="keyword">private</span> String mobile;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExcelColumn</span>(title = <span class="string">"发卡日期"</span>, index = <span class="number">14</span>, datePattern = <span class="string">"M/d/yyyy HH:mm"</span>)</span><br><span class="line">    <span class="keyword">private</span> Date sendCardTime;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// getter setter 省略</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>读取Exel</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">List&lt;Member&gt; members = Reader.create(Member.class)</span><br><span class="line">                 .from(<span class="keyword">new</span> File(<span class="string">"members.xlsx"</span>))</span><br><span class="line">                 .start(<span class="number">1</span>)</span><br><span class="line">                 .asList();</span><br></pre></td></tr></table></figure>
+
+<p>其他例子：见 <a href="https://biezhi.github.io/excel-plus/#/" target="_blank" rel="noopener">https://biezhi.github.io/excel-plus/#/</a></p>
+
       
     </div>
     
@@ -355,8 +364,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/17/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2019/07/18/mybatis-like/" rel="next" title="Mybatis 模糊查询">
+                <i class="fa fa-chevron-left"></i> Mybatis 模糊查询
               </a>
             
           </div>
@@ -365,8 +374,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/17/spring-boot-redis-integrate/" rel="prev" title="Spring Boot Redis 集成">
-                Spring Boot Redis 集成 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/19/invalid-byte-tag-in-constant-pool-18/" rel="prev" title="Invalid byte tag in constant pool 18">
+                Invalid byte tag in constant pool 18 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -481,7 +490,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Boot-Mybatis使用"><span class="nav-number">1.</span> <span class="nav-text">Spring Boot Mybatis使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#添加依赖"><span class="nav-number">1.1.</span> <span class="nav-text">添加依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据源配置"><span class="nav-number">1.2.</span> <span class="nav-text">数据源配置</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Excel-Plus"><span class="nav-number">1.</span> <span class="nav-text">Excel Plus</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用指南"><span class="nav-number">2.</span> <span class="nav-text">使用指南</span></a></li></ol></div>
             
 
           </div>
